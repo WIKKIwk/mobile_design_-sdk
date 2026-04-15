@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 import 'm3_design.dart';
 import 'apple_design.dart';
+import 'grainy_gradient_design.dart';
 
 enum AppDesignStyle {
   material3,
   apple,
+  grainyGradient,
 }
 
 class DesignSDK {
@@ -17,6 +19,8 @@ class DesignSDK {
         return M3Design.theme;
       case AppDesignStyle.apple:
         return AppleDesign.theme;
+      case AppDesignStyle.grainyGradient:
+        return GrainyGradientDesign.theme;
     }
   }
 }
